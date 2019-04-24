@@ -1,0 +1,56 @@
+h1 {text-align: center}
+p {margin: 0;}
+td {
+    border: 0;
+    width: 80px;
+    height: 80px;
+}
+.hide {
+    empty-cells: hide;
+}
+textarea {
+    border: 0;
+    resize: none;
+    margin: 0;
+}
+.num {
+    text-align: right;
+}
+
+.name {
+    text-align: center;
+    font-size: 20px;
+}
+.mass {
+    text-align: left;
+    margin-right: 10px;
+}
+.react-nonmetal {background-color: #EFFF8F;}
+.react-nonmetal textarea {background-color: #EFFF8F;}
+
+.noble-gas {background-color: #C0FFFF;}
+.noble-gas textarea {background-color: #C0FFFF;}
+
+.metalloid {background-color: #CCCC98;}
+.metalloid textarea {background-color:  #CCCC98;}
+
+.alkaline-metal {background-color: #FF6665;}
+.alkaline-metal textarea {background-color: #FF6665;}
+
+.alkaline-earth-metal {background-color: #FFDEAD;}
+.alkaline-earth-metal textarea {background-color: #FFDEAD;}
+
+.lanthanide {background-color: #FFBFFF;}
+.lanthanide textarea {background-color: #FFBFFF;}
+
+.actinide {background-color: #FF98CC;}
+.actinide textarea {background-color: #FF98CC;}
+
+.trans-metal {background-color: #FFC0C0;}
+.trans-metal textarea {background-color: #FFC0C0;}
+
+.post-metal {background-color: #CCCCCC;}
+.post-metal textarea {background-color: #CCCCCC;}
+
+.unknow {background-color: #E8E8E8;}
+.unknow textarea {background-color: #E8E8E8;}

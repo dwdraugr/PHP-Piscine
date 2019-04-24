@@ -3,64 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>mendeleiev</title>
-	<style type="text/css">
-		h1 {text-align: center}
-		p {margin: 0;}
-		td {
-			border: 0;
-			width: 80px;
-			height: 80px;
-		}
-		.hide {
-			empty-cells: hide;
-		}
-		textarea {
-			border: 0;
-			resize: none;
-			margin: 0;
-		}
-		.num {
-			text-align: right;
-		}
-
-		.name {
-			text-align: center;
-			font-size: 20px;
-		}
-		.mass {
-			text-align: left;
-			margin-right: 10px;
-		}
-		.react-nonmetal {background-color: #EFFF8F;}
-		.react-nonmetal textarea {background-color: #EFFF8F;}
-
-		.noble-gas {background-color: #C0FFFF;}
-		.noble-gas textarea {background-color: #C0FFFF;}
-
-		.metalloid {background-color: #CCCC98;}
-		.metalloid textarea {background-color:  #CCCC98;}
-
-		.alkaline-metal {background-color: #FF6665;}
-		.alkaline-metal textarea {background-color: #FF6665;}
-
-		.alkaline-earth-metal {background-color: #FFDEAD;}
-		.alkaline-earth-metal textarea {background-color: #FFDEAD;}
-
-		.lanthanide {background-color: #FFBFFF;}
-		.lanthanide textarea {background-color: #FFBFFF;}
-
-		.actinide {background-color: #FF98CC;}
-		.actinide textarea {background-color: #FF98CC;}
-
-		.trans-metal {background-color: #FFC0C0;}
-		.trans-metal textarea {background-color: #FFC0C0;}
-
-		.post-metal {background-color: #CCCCCC;}
-		.post-metal textarea {background-color: #CCCCCC;}
-
-		.unknow {background-color: #E8E8E8;}
-		.unknow textarea {background-color: #E8E8E8;}
-	</style>
+	<link href="responsive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <h1>Periodic table</h1>
@@ -68,21 +11,21 @@
 	 width="15%"
 	 src="https://res.cloudinary.com/mel-science/image/upload/fl_progressive:steep,q_auto:good,w_1200/v1/articles/None/image_kzudum.jpg">
 <table>
-<!--	First Period-->
+	<!--	First Period-->
 	<tr>
 		<td class="react-nonmetal">
-				<p class="num"><textarea class="num" rows="1" cols="3">1</textarea></p>
-				<p class="name"><textarea class="name" rows="1" cols="2">H</textarea></p>
-				<p class="mass"><textarea class="mass" rows="1" cols="5">1.008</textarea></p>
+			<p class="num"><textarea class="num" rows="1" cols="3">1</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">H</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">1.008</textarea></p>
 		</td>
 		<td colspan="16" class="hide"></td>
 		<td class="noble-gas">
-				<p class="num"><textarea class="num" rows="1" cols="3">2</textarea></p>
-				<p class="name"><textarea class="name" rows="1" cols="2">He</textarea></p>
-				<p class="mass"><textarea class="mass" rows="1" cols="5">4.0026</textarea></p>
+			<p class="num"><textarea class="num" rows="1" cols="3">2</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">He</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">4.0026</textarea></p>
 		</td>
 	</tr>
-<!--	Second Period-->
+	<!--	Second Period-->
 	<tr>
 		<td class="alkaline-metal">
 			<p class="num"><textarea class="num" rows="1" cols="3">3</textarea></p>
@@ -126,7 +69,7 @@
 			<p class="mass"><textarea class="mass" rows="1" cols="5">20.180</textarea></p>
 		</td>
 	</tr>
-<!--	Third Period-->
+	<!--	Third Period-->
 	<tr>
 		<td class="alkaline-metal">
 			<p class="num"><textarea class="num" rows="1" cols="3">11</textarea></p>
@@ -170,7 +113,7 @@
 			<p class="mass"><textarea class="mass" rows="1" cols="5">39.948</textarea></p>
 		</td>
 	</tr>
-<!--	4th Period-->
+	<!--	4th Period-->
 	<tr>
 		<td class="alkaline-metal">
 			<p class="num"><textarea class="num" rows="1" cols="3">19</textarea></p>
@@ -263,7 +206,7 @@
 			<p class="mass"><textarea class="mass" rows="1" cols="5">83.798</textarea></p>
 		</td>
 	</tr>
-<!--	5th Period-->
+	<!--	5th Period-->
 	<tr>
 		<td class="alkaline-metal">
 			<p class="num"><textarea class="num" rows="1" cols="3">37</textarea></p>
@@ -356,7 +299,7 @@
 			<p class="mass"><textarea class="mass" rows="1" cols="5">131.29</textarea></p>
 		</td>
 	</tr>
-<!--	6th Period-->
+	<!--	6th Period-->
 	<tr>
 		<td class="alkaline-metal">
 			<p class="num"><textarea class="num" rows="1" cols="3">55</textarea></p>
@@ -449,7 +392,7 @@
 			<p class="mass"><textarea class="mass" rows="1" cols="5">[222]</textarea></p>
 		</td>
 	</tr>
-<!--	7th Period-->
+	<!--	7th Period-->
 	<tr>
 		<td class="alkaline-metal">
 			<p class="num"><textarea class="num" rows="1" cols="3">87</textarea></p>
@@ -543,7 +486,7 @@
 		</td>
 	</tr>
 	<tr><td colspan="18" class="hide"></td></tr>
-<!--	Lanthanide-->
+	<!--	Lanthanide-->
 	<tr>
 		<td colspan="2" class="name"><h2>Lanthanide:</h2></td>
 		<td colspan="1" class="hide"></td>
@@ -619,7 +562,7 @@
 		</td>
 		<td colspan="1" class="hide"></td>
 	</tr>
-<!--	Actinide-->
+	<!--	Actinide-->
 	<tr>
 		<td colspan="2" class="name"><h2>Actinide:</h2></td>
 		<td colspan="1" class="hide"></td>
