@@ -3,10 +3,696 @@
 <head>
 	<meta charset="UTF-8">
 	<title>mendeleiev</title>
+	<style type="text/css">
+		h1 {text-align: center}
+		td {
+			border: 2px solid black;
+			width: 80px;
+			height: 120px;
+		}
+		.hide {
+			empty-cells: hide;
+		}
+		textarea {
+			border: 0;
+			resize: none;
+			margin: 0;
+		}
+		.num {
+			text-align: right;
+		}
+
+		.name {
+			text-align: center;
+			font-size: 20px;
+		}
+		.mass {
+			text-align: left;
+		}
+		.react-nonmetal {background-color: #EFFF8F;}
+		.react-nonmetal textarea {background-color: #EFFF8F;}
+
+		.noble-gas {background-color: #C0FFFF;}
+		.noble-gas textarea {background-color: #C0FFFF;}
+
+		.metalloid {background-color: #CCCC98;}
+		.metalloid textarea {background-color:  #CCCC98;}
+
+		.alkaline-metal {background-color: #FF6665;}
+		.alkaline-metal textarea {background-color: #FF6665;}
+
+		.alkaline-earth-metal {background-color: #FFDEAD;}
+		.alkaline-earth-metal textarea {background-color: #FFDEAD;}
+
+		.lanthanide {background-color: #FFBFFF;}
+		.lanthanide textarea {background-color: #FFBFFF;}
+
+		.actinide {background-color: #FF98CC;}
+		.actinide textarea {background-color: #FF98CC;}
+
+		.trans-metal {background-color: #FFC0C0;}
+		.trans-metal textarea {background-color: #FFC0C0;}
+
+		.post-metal {background-color: #CCCCCC;}
+		.post-metal textarea {background-color: #CCCCCC;}
+
+		.unknow {background-color: #E8E8E8;}
+		.unknow textarea {background-color: #E8E8E8;}
+	</style>
 </head>
 <body>
+<h1>Periodic table</h1>
+<img alt="oops"
+	 width="15%"
+	 src="https://res.cloudinary.com/mel-science/image/upload/fl_progressive:steep,q_auto:good,w_1200/v1/articles/None/image_kzudum.jpg">
 <table>
-	<h1 align="center">Periodic table</h1>
+<!--	First Period-->
+	<tr>
+		<td class="react-nonmetal">
+				<p class="num"><textarea class="num" rows="1" cols="3">1</textarea></p>
+				<p class="name"><textarea class="name" rows="1" cols="2">H</textarea></p>
+				<p class="mass"><textarea class="mass" rows="1" cols="5">1.008</textarea></p>
+		</td>
+		<td colspan="16" class="hide"></td>
+		<td class="noble-gas">
+				<p class="num"><textarea class="num" rows="1" cols="3">2</textarea></p>
+				<p class="name"><textarea class="name" rows="1" cols="2">He</textarea></p>
+				<p class="mass"><textarea class="mass" rows="1" cols="5">4.0026</textarea></p>
+		</td>
+	</tr>
+<!--	Second Period-->
+	<tr>
+		<td class="alkaline-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">3</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Li</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">6.94</textarea></p>
+		</td>
+		<td class="alkaline-earth-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">4</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Be</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">9.0122</textarea></p>
+		</td>
+		<td colspan="10" class="hide"></td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">5</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">B</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">10.81</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">6</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">C</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">12.011</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">7</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">N</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">14.007</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">8</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">O</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">15.999</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">9</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">F</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">18.998</textarea></p>
+		</td>
+		<td class="noble-gas">
+			<p class="num"><textarea class="num" rows="1" cols="3">10</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ne</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">20.180</textarea></p>
+		</td>
+	</tr>
+<!--	Third Period-->
+	<tr>
+		<td class="alkaline-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">11</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Na</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">22.990</textarea></p>
+		</td>
+		<td class="alkaline-earth-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">12</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Mg</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">24.305</textarea></p>
+		</td>
+		<td colspan="10" class="hide"></td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">13</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Al</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">26.982</textarea></p>
+		</td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">14</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Si</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">28.085</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">15</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">P</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">30.974</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">16</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">S</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">32.06</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">17</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cl</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">35.45</textarea></p>
+		</td>
+		<td class="noble-gas">
+			<p class="num"><textarea class="num" rows="1" cols="3">18</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ar</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">39.948</textarea></p>
+		</td>
+	</tr>
+<!--	4th Period-->
+	<tr>
+		<td class="alkaline-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">19</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">K</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">39.098</textarea></p>
+		</td>
+		<td class="alkaline-earth-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">20</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ca</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">40.078</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">21</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Sc</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">44.956</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">22</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ti</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">47.867</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">23</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">V</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">50.942</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">24</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">51.996</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">25</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Mn</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">54.938</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">26</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Fe</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">55.845</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">27</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Co</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">58.933</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">28</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ni</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">58.693</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">29</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cu</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">63.546</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">30</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Zn</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">63.38</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">31</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ga</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">69.723</textarea></p>
+		</td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">32</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ge</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">72.630</textarea></p>
+		</td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">33</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">As</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">74.922</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">34</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Se</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">78.971</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">35</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Br</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">79.904</textarea></p>
+		</td>
+		<td class="noble-gas">
+			<p class="num"><textarea class="num" rows="1" cols="3">36</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Kr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">83.798</textarea></p>
+		</td>
+	</tr>
+<!--	5th Period-->
+	<tr>
+		<td class="alkaline-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">37</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Rb</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">85.468</textarea></p>
+		</td>
+		<td class="alkaline-earth-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">38</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Sr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">87.62</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">39</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Y</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">88.906</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">40</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Zr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">91.224</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">41</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Nb</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">92.906</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">42</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Mo</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">95.95</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">43</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Tc</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[97]</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">44</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ru</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">101.07</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">45</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Rh</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">102.91</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">46</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pd</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">106.42</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">47</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ag</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">107.87</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">48</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cd</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">112.41</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">49</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">In</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">114.82</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">50</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Sn</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">118.71</textarea></p>
+		</td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">51</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Sb</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">121.76</textarea></p>
+		</td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">52</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Te</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">127.60</textarea></p>
+		</td>
+		<td class="react-nonmetal">
+			<p class="num"><textarea class="num" rows="1" cols="3">53</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">I</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">126.90</textarea></p>
+		</td>
+		<td class="noble-gas">
+			<p class="num"><textarea class="num" rows="1" cols="3">54</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Xe</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">131.29</textarea></p>
+		</td>
+	</tr>
+<!--	6th Period-->
+	<tr>
+		<td class="alkaline-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">55</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cs</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">132.91</textarea></p>
+		</td>
+		<td class="alkaline-earth-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">56</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ba</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">137.33</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">57</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">La*</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">138.91</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">72</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Hf</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">178.49</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">73</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ta</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">180.95</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">74</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">W</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">183.84</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">75</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Re</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">186.21</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">76</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Os</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">190.23</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">77</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ir</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">192.22</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">78</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pt</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">195.08</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">79</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Au</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">196.97</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">80</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Hg</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">200.59</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">81</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Tl</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">204.38</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">82</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pb</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">207.2</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">83</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Bi</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">208.98</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">84</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Po</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[209]</textarea></p>
+		</td>
+		<td class="metalloid">
+			<p class="num"><textarea class="num" rows="1" cols="3">85</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">At</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[210]</textarea></p>
+		</td>
+		<td class="noble-gas">
+			<p class="num"><textarea class="num" rows="1" cols="3">86</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Rn</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[222]</textarea></p>
+		</td>
+	</tr>
+<!--	7th Period-->
+	<tr>
+		<td class="alkaline-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">87</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Fr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[233]</textarea></p>
+		</td>
+		<td class="alkaline-earth-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">88</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ra</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[226]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">89</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ac*</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[227]</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">104</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Rf</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[267]</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">105</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Db</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[268]</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">106</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Sg</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[269]</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">107</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Bh</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[270]</textarea></p>
+		</td>
+		<td class="trans-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">108</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Hs</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[270]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">109</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Mt</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[278]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">110</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ds</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[281]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">111</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Rg</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[282]</textarea></p>
+		</td>
+		<td class="post-metal">
+			<p class="num"><textarea class="num" rows="1" cols="3">112</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cn</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[285]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">113</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Nh</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[286]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">114</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Fl</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[289]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">115</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Mc</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[290]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">116</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Lv</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[293]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">117</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ts</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[294]</textarea></p>
+		</td>
+		<td class="unknow">
+			<p class="num"><textarea class="num" rows="1" cols="3">118</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Og</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[294]</textarea></p>
+		</td>
+	</tr>
+	<tr><td colspan="18" class="hide"></td></tr>
+<!--	Lanthanide-->
+	<tr>
+		<td colspan="2" class="name"><h2>Lanthanide:</h2></td>
+		<td colspan="1" class="hide"></td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">58</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ce</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">140.12</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">59</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">140.91</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">60</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Nd</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">144.24</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">61</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pm</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[145]</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">62</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Sm</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">150/36</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">63</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Eu</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">151.96</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">64</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Gd</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">157.25</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">65</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Tb</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">158.93</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">66</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Dy</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">162.5</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">67</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Ho</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">164.93</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">68</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Er</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">167.26</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">69</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Tm</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">168.93</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">70</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Yb</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">173.05</textarea></p>
+		</td>
+		<td class="lanthanide">
+			<p class="num"><textarea class="num" rows="1" cols="3">71</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Lu</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">174.97</textarea></p>
+		</td>
+		<td colspan="1" class="hide"></td>
+	</tr>
+<!--	Actinide-->
+	<tr>
+		<td colspan="2" class="name"><h2>Actinide:</h2></td>
+		<td colspan="1" class="hide"></td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">90</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Th</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">232.04</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">91</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pa</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">231.04</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">92</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">U</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">238.03</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">93</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Np</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[237]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">94</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Pu</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[244]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">95</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Am</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[243]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">96</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cm</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[247]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">97</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Bk</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[247]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">98</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Cf</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[251]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">99</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Es</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[252]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">100</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Fm</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[257]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">101</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Md</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[258]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">102</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">No</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[259]</textarea></p>
+		</td>
+		<td class="actinide">
+			<p class="num"><textarea class="num" rows="1" cols="3">103</textarea></p>
+			<p class="name"><textarea class="name" rows="1" cols="2">Lr</textarea></p>
+			<p class="mass"><textarea class="mass" rows="1" cols="5">[266]</textarea></p>
+		</td>
+		<td colspan="1" class="hide"></td>
+	</tr>
 </table>
 </body>
 </html>
