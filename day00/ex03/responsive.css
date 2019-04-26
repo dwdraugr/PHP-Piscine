@@ -1,56 +1,63 @@
-h1 {text-align: center}
-p {margin: 0;}
+h1 {
+    text-align: center;
+    font-size: 3vmin;
+    border: 2px solid black;
+    background: lightcyan;
+}
+p {
+    margin: 0;
+}
 td {
     border: 0;
-    width: 80px;
-    height: 80px;
+    width: 12vw;
+    height: 5vh;
 }
 .hide {
     empty-cells: hide;
 }
-textarea {
+p {
     border: 0;
     resize: none;
     margin: 0;
+    font-size: 1vmin;
 }
 .num {
-    text-align: right;
+    text-align: left;
 }
 
 .name {
     text-align: center;
-    font-size: 20px;
+    font-size: 2vmin;
 }
 .mass {
-    text-align: left;
-    margin-right: 10px;
+    text-align: right;
 }
 .react-nonmetal {background-color: #EFFF8F;}
-.react-nonmetal textarea {background-color: #EFFF8F;}
+.react-nonmetal p {background-color: #EFFF8F;}
 
 .noble-gas {background-color: #C0FFFF;}
-.noble-gas textarea {background-color: #C0FFFF;}
+.noble-gas p {background-color: #C0FFFF;}
 
 .metalloid {background-color: #CCCC98;}
-.metalloid textarea {background-color:  #CCCC98;}
+.metalloid p {background-color:  #CCCC98;}
 
 .alkaline-metal {background-color: #FF6665;}
-.alkaline-metal textarea {background-color: #FF6665;}
+.alkaline-metal p {background-color: #FF6665;}
 
 .alkaline-earth-metal {background-color: #FFDEAD;}
-.alkaline-earth-metal textarea {background-color: #FFDEAD;}
+.alkaline-earth-metal p {background-color: #FFDEAD;}
 
 .lanthanide {background-color: #FFBFFF;}
-.lanthanide textarea {background-color: #FFBFFF;}
+.lanthanide p {background-color: #FFBFFF;}
 
 .actinide {background-color: #FF98CC;}
-.actinide textarea {background-color: #FF98CC;}
+.actinide p {background-color: #FF98CC;}
 
 .trans-metal {background-color: #FFC0C0;}
-.trans-metal textarea {background-color: #FFC0C0;}
+.trans-metal p {background-color: #FFC0C0;}
 
 .post-metal {background-color: #CCCCCC;}
-.post-metal textarea {background-color: #CCCCCC;}
+.post-metal p {background-color: #CCCCCC;}
 
 .unknow {background-color: #E8E8E8;}
-.unknow textarea {background-color: #E8E8E8;}
+.unknow p {background-color: #E8E8E8;}
