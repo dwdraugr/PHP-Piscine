@@ -23,14 +23,17 @@ p {
 }
 .num {
     text-align: left;
+    font-size: 1vmin;
 }
 
 .name {
     text-align: center;
     font-size: 2vmin;
+    font-weight: bold;
 }
 .mass {
     text-align: right;
+    font-size: 1vmin;
 }
 .react-nonmetal {background-color: #EFFF8F;}
 .react-nonmetal p {background-color: #EFFF8F;}
