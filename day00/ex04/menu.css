@@ -1,45 +1,37 @@
-ul.drop_menu li
-{
-    display: none;
-    background-color: #058da8;
-    padding:20px 20px 20px 20px;
-    border-radius: 5%;
-    margin: 5px;
-    text-align: center;
-    box-shadow: 0px -5px 10px #000000;
+.dropdown {
+    /*position: relative;*/
+    display: inline-block;
+    margin: 30px;
+}
+
+.dropbtn {
+    background-color: deeppink;
     color: white;
-    font-size: 3vw;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
-ul.drop_menu li:first-child
-{
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    align-items: center;
     display: block;
-    text-align: left;
-    background-color: #092879;
 }
 
-ul.drop_menu:hover li
-{
-    display: block;
-    box-shadow: 0px 5px 10px #000000;
-}
+.dropdown-content a:hover {background-color: #ddd;}
 
-ul.drop_menu:hover li:first-child
-{
-    background-color: #00a0ad;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,40,121,1) 41%, rgba(5,141,168,1) 100%);
-    font-weight: bold;
-}
+.dropdown:hover .dropdown-content {display: block;}
 
-a
-{
-    color: inherit;
-    text-decoration: none;
-}
-
-ul
-{
-    width: 25%;
-    padding: 0px;
-    float: left;
+.dropdown:hover .dropbtn {
+    background-color: pink;
 }
