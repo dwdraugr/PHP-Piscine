@@ -1,29 +1,116 @@
+body {
+    background: #505050;
+}
+
 header {
     border-radius: 10px;
     background: #909090;
-    margin-left: 15vw;
-    width: 65vw;
-    height: 100%;
+    margin-left: 9vw;
+    width: 80vw;
+    height: 105px;
+    min-width: 1500px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.head42 {
+    margin: 10px;
+    width: 320px;
+}
+
+.reload {
+    margin: 7px;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: -232px;
+    margin-top: -30px;
 }
 
 .search {
-    width: 10vw;
-    height: 100%;
-    margin-top: 7px;
     float: right;
+    width: 204px;
+    height: 117px;
 }
-.close {
-    float: right;
-    width: 2vmin;
-    margin: 2px;
-}
-.reload {
-    width: 2vmin;
-    float: right;
-    margin: 2px;
-}
-.head42 {
-    margin: 10px;
-    width: 30%;
+
+.menu {
+    background-color: #909090;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    width: max-content;
     display: inline-block;
+    vertical-align: top;
+}
+.menu img {
+    margin: 10px;
+    width: 80px;
+}
+
+.cluster {
+    display: inline-block;
+    background-color: #909090;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    width: min-content;
+    vertical-align: top;
+}
+
+.cluster img {
+    width: 1024px;
+    margin: 10px;
+}
+
+.mybody {
+    margin-top: 1.5vh;
+    margin-left: 11.5vw;
+    width: 1500px;
+}
+.wall {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 214px;
+    background-image: url("resources/brick.jpg");
+    width: 80px;
+    height: 70px;
+}
+
+.green_input
+{
+    background-color: #85FF91;
+    position: absolute;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    width: 500px;
+    height: 160px;
+    margin-left: -30px;
+    margin-top: -60px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.green_input span.big
+{
+    font-family: Times;
+    font-size: 31px;
+}
+
+.green_input span.shadow
+{
+    text-shadow: 5px 5px 5px #ff0000;
+}
+
+.text {
+    width: 375px;
+}
+
+.green_input span.italic
+{
+    font-style: italic;
 }
