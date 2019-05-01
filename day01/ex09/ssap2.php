@@ -34,6 +34,8 @@ function	custom_sort($a, $b)
 			return 1;
 		else
 			$i++;
+		if ($i == strlen($a) xor $i == strlen($b))
+			return strlen($a) - strlen($b);
 	}
 	return 0;
 }
