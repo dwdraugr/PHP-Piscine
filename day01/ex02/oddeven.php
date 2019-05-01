@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 	while (1) {
 		echo("Enter a value : ");

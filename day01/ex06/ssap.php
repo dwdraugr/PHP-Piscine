@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 	function ft_split($str)
 	{
@@ -14,7 +15,7 @@
 			$str = trim(preg_replace("/\s+/", " ", $argv[$i]));
 			$dell_space = ft_split($str);
 			for ($j = 0; $j < count($dell_space); $j++) {
-				$word = array_push($arr, $dell_space[$j]);
+				$arr[] = $dell_space[$j];
 			}
 		}
 		sort($arr);
