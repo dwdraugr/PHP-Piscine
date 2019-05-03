@@ -6,8 +6,8 @@
 		?><html><body>
 Hello Zaz<br />
 <?php
-		echo "<img src=data:img/png;base64,";
-		echo base64_encode(file_get_contents('img/42.png')) . "'>";
+		$base = base64_encode(file_get_contents('img/42.png'));
+	echo "<img src='data:img/png;base64," . $base . "'>\n";
 ?>
 
 </body></html>
