@@ -9,6 +9,7 @@
 		if ($elem['login'] == $_POST['login'])
 		{
 			$oldpw = hash("whirlpool",  $_POST['oldpw']);
+			echo($oldpw."<br/>".$elem[passwd]);
 			if ($oldpw == $elem['passwd'])
 			{
 				$elem['passwd'] = hash("whirlpool", $_POST['newpw']);
