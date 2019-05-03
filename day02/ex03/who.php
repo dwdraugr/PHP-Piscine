@@ -1,16 +1,21 @@
 #!/usr/bin/php
 <?php
-	date_default_timezone_set('Europe/Moscow');
-	$file = fopen("/var/run/utmpx", "r");
-	while ($bin = fread($file, 628))
+$file = fopen("/var/run/utmpx", "rb");
+fseek($file, 1256);
+date_default_timezone_set("Europe/Moscow");
+while (!feof($file))
+{
+	$data = fread($file, 628);
+	if (strlen($data) == 628)
 	{
-		$bin = unpack("a256user/a4id/a32line/ipid/itype/i2time/a256host/i16pad", $bin);
-		if ($bin["type"] == 7)
-			$user[$bin["line"]] = array("user" => $bin["user"], "time" => $bin["time1"]);
+		$data = unpack("a256user/a4id/a32line/ipid/itype/itime", $data);
+		if ($data['type'] == 7)
+		{
+			echo trim($data['user']) . " ";
+			echo trim($data['line']) . "  ";
+			$time = date("M d H:i", $data['time']);
+			echo $time . "\n";
+		}
 	}
-
-	foreach($user as $line => $data)
-	{
-		echo substr($str, 0, 7)."\t".substr($line, 0, 7)."\t".date("M  j H:i", $data["time"])." \n";
-	}
+}
 ?>
