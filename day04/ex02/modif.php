@@ -3,7 +3,7 @@
 		echo("ERROR WHITESPACE\n");
 		exit();
 	}
-	$db = unserialize(file_get_contents("private/passwd"));
+	$db = unserialize(file_get_contents("../private/passwd"));
 	foreach ($db as $elem)
 	{
 		if ($elem['login'] == $_POST['login'])

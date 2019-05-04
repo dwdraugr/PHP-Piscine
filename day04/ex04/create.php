@@ -22,7 +22,7 @@
 		file_put_contents("../private/passwd", serialize($db));
 		echo("OK\n");
 	} else {
-		mkdir("private", 0700);
+		mkdir("../private", 0700);
 		$login = $_POST['login'];
 		$passwd = hash("whirlpool", $_POST['passwd']);
 		$elem['login'] = $login;
