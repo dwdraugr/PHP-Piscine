@@ -1,5 +1,4 @@
 <?php
-	header('Content-Type: text/plain');
 	session_start();
 		if (!($_SESSION['loggued_on_user']))
 			echo "ERROR\n";
@@ -8,7 +7,7 @@
 				$chat = unserialize(file_get_contents('../private/chat'));
 				date_default_timezone_set("Europe/Moscow");
 				foreach ($chat as $v) {
-					echo "[" . date('H:i', $v['time']) . "] " . $v['login'] . "::\t".  $v['msg'] . "\n";
+					echo "[" . date('H:i', $v['time']) . "] " . "<b>" . $v['login'] . "</b>" . ": ".  $v['msg'] . "<br />"."\n";
 				}
 			}
 }
