@@ -1,0 +1,30 @@
+||================================class Color=================================||
+
+  This class stores the color data in RGB format. Red, green and blue component
+  located in the appropriate public fields.
+
+  FIELDS:
+  public red   - stores the value of the red component
+  public green - stores the value of the green component
+  public blue  - stores the value of the blue component
+  public static verbose - when TRUE, displays debug information. In default
+     FALSE
+
+  CONSTRUCTOR:
+  The constructor accepts an array in which either the "rgb" field is stored,
+  or three fields: "r", "g" and "b". When passing values greater than 255,
+  behavior is undefined.
+
+  FUNCTIONS:
+  public add(Color $color) - add the the components of the current instance to
+     the
+     components of another instance argument. The resulting color is a new
+     instance.
+  sub(Color $color) - substract the components of the current instance to the
+     components
+     of another instance argument. The resulting color is a new instance.
+  mult($f) - multiply the components of the current instance to the components
+     of of another instance argument. The resulting color is a new instance.
+  doc() - returns the documentation of the class.
+
+||============================================================================||
