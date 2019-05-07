@@ -7,7 +7,7 @@ class Color
 	public	$red;
 	public	$green;
 	public	$blue;
-	public static $verbose = FALSE;
+	static  $verbose = FALSE;
 
 	public function __construct($array)
 	{

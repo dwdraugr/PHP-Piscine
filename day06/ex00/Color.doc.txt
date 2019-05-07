@@ -22,4 +22,4 @@ Substracts each color constitutive and returns a new Color instance.
 Color   mult( $f );
 Multiplies each color constitutive by factor $f and returns a new Color
 instance.
----------------------------------------------------------------------- Color ->
+---------------------------------------------------------------------- Color 1->
