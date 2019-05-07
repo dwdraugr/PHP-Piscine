@@ -1,30 +1,25 @@
-||================================class Color=================================||
+<- Color ----------------------------------------------------------------------
+The Color class handles RGB colors.
 
-  This class stores the color data in RGB format. Red, green and blue component
-  located in the appropriate public fields.
+An instance can be contructed from either a RGB value:
+new Color( array( 'rgb' => 12345 ) );
 
-  FIELDS:
-  public red   - stores the value of the red component
-  public green - stores the value of the green component
-  public blue  - stores the value of the blue component
-  public static verbose - when TRUE, displays debug information. In default
-     FALSE
+Or from distinct red, green, blue constitutives:
+new Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) );
 
-  CONSTRUCTOR:
-  The constructor accepts an array in which either the "rgb" field is stored,
-  or three fields: "r", "g" and "b". When passing values greater than 255,
-  behavior is undefined.
+Red, green, blue constitutives and RGB values are converted to intergers.
+Negative or > to 255 color constitutives are left as is.
+Any other use is undefined behaviour.
 
-  FUNCTIONS:
-  public add(Color $color) - add the the components of the current instance to
-     the
-     components of another instance argument. The resulting color is a new
-     instance.
-  sub(Color $color) - substract the components of the current instance to the
-     components
-     of another instance argument. The resulting color is a new instance.
-  mult($f) - multiply the components of the current instance to the components
-     of of another instance argument. The resulting color is a new instance.
-  doc() - returns the documentation of the class.
+The class provides the following methods :
 
-||============================================================================||
+Color   add( Color $rhs );
+Adds each color constitutive and returns a new Color instance.
+
+Color   sub( Color $rhs );
+Substracts each color constitutive and returns a new Color instance.
+
+Color   mult( $f );
+Multiplies each color constitutive by factor $f and returns a new Color
+instance.
+---------------------------------------------------------------------- Color ->
