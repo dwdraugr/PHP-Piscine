@@ -1,3 +1,12 @@
 <- Vertex ----------------------------------------------------------------------
-Your documentation here.
+The Vertex class handles coordinate of point and its color.
+
+For construct you must pass in constructor value of 'x', 'y' and 'z'coordinates.
+Coordinate 'w' and Color instance is optional. I their default values are
+'1.0' and 'Color (255, 255, 255)' respectively.
+If you pass in 'color'
+different from Color type instance - is undefined behaviour.
+
+Access to private elements performed by __get and __set magic
+function.
 ---------------------------------------------------------------------- Vertex ->

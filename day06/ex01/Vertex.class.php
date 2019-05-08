@@ -1,12 +1,14 @@
 <?php
 
+require_once ("Color.class.php");
+
 class Vertex
 {
 	private $_x;
 	private $_y;
 	private $_z;
 	private $_w = 1.0;
-	private $color;
+	private $_color;
 	static  $verbose = FALSE;
 
 	public function __construct(array $array)
@@ -16,10 +18,10 @@ class Vertex
 		$this->_z = $array['z'];
 		if (isset($array['w']))
 			$this->_w = $array['w'];
-		if (isset($array['color']))
-			$this->color = $array['color'];
+		if (isset($array['color']) && $array['color'] instanceof Color)
+			$this->_color = $array['color'];
 		else
-			$this->color = new Color(array('red' => 255, 'green' => 255, 'blue' => 255));
+			$this->_color = new Color(array('red' => 255, 'green' => 255, 'blue' => 255));
 		if (Vertex::$verbose)
 		{
 			printf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f, %s ) constructed\n",
@@ -27,7 +29,7 @@ class Vertex
 					$this->_y,
 					$this->_z,
 					$this->_w,
-					$this->color);
+					$this->_color);
 		}
 	}
 
@@ -40,25 +42,37 @@ class Vertex
 				$this->_y,
 				$this->_z,
 				$this->_w,
-				$this->color);
+				$this->_color);
 		}
 	}
 
 	function __toString()
 	{
 		if (Vertex::$verbose)
-			return sprintf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f, %s ) ",
+			return sprintf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f, %s )",
 				$this->_x,
 				$this->_y,
 				$this->_z,
 				$this->_w,
-				$this->color);
+				$this->_color);
 		else
-			return sprintf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f ) ",
+			return sprintf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f )",
 				$this->_x,
 				$this->_y,
 				$this->_z,
 				$this->_w);
+	}
+
+	public function __get($property)
+	{
+		if (property_exists($this, $property))
+			return $this->$property;
+	}
+
+	public function __set($property, $value)
+	{
+		if (property_exists($this, $property))
+				$this->$property = $value;
 	}
 
 	public static function doc()
@@ -69,3 +83,4 @@ class Vertex
 		echo "\n";
 	}
 }
+
